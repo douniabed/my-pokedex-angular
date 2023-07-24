@@ -1,5 +1,6 @@
 <div class="container">
   <div class="row">
+    <app-search-pokemon></app-search-pokemon>
     <div class="col s12 m6 l4" *ngFor="let pokemon of pokemonList">
       <div
         (click)="goToPokemon(pokemon)"
@@ -30,3 +31,9 @@
     </div>
   </div>
 </div>
+<a
+  class="btn-floating btn-large waves-effect waves-light red z-depth-3"
+  style="position: fixed; bottom: 25px; right: 25px; color: white"
+  routerLink="/pokemon/add"
+  >+</a
+>
