@@ -11,7 +11,7 @@ export class AuthService {
   constructor() {}
 
   login(name: string, password: string): Observable<boolean> {
-    const isLoggedIn = name == "pikachu" && password == "pikachu";
+    const isLoggedIn = name == "pikatchu" && password == "pikatchu";
     return of(isLoggedIn).pipe(
       delay(1000),
       tap((isLoggedIn) => (this.isLoggedIn = isLoggedIn))
